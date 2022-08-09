@@ -1,6 +1,6 @@
 resource "null_resource" "mynull1" {
   provisioner "local-exec" {
-    command = "env"
+    command = "uname -a ; env"
   }
 
   triggers = {
